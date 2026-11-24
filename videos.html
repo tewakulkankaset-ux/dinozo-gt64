@@ -139,6 +139,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .cta{padding:26px 20px}
 }
 </style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','379560130857769');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'DINOZO GT64 X-SERIES',content_ids:['GT64'],content_type:'product',value:9900,currency:'THB'});
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');
+  var p={content_name:'DINOZO GT64 X-SERIES',value:9900,currency:'THB'};
+  if(h.indexOf('line.me')>-1){fbq('track','Lead',Object.assign({method:'LINE'},p));}
+  else if(h.indexOf('tel:')===0){fbq('track','Contact',Object.assign({method:'Phone'},p));}
+  else if(h.indexOf('lnwshop.com')>-1){fbq('track','InitiateCheckout',Object.assign({method:'Online shop',content_ids:['GT64'],content_type:'product',num_items:1},p));}
+  else if(h.indexOf('facebook.com')>-1||h.indexOf('m.me')>-1){fbq('track','Contact',Object.assign({method:'Facebook'},p));}
+},true);
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=379560130857769&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 
