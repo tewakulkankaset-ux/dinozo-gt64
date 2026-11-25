@@ -369,6 +369,21 @@ footer img{height:30px;width:auto}
   .mbar .btn{justify-content:center;padding:12px 10px;font-size:1rem}
 }
 </style>
+<!-- Google tag (Google Ads) · Conversion: GT64 - ติดต่อ LINE / GT64 - โทร -->
+<script>
+var GADS={id:'AW-769989507',line:'zD8pCKDLhb8dEIO3lO8C',call:'UuCUCKPLhb8dEIO3lO8C'};
+if(GADS.id.indexOf('XXXX')===-1){
+  var gs=document.createElement('script');gs.async=1;gs.src='https://www.googletagmanager.com/gtag/js?id='+GADS.id;document.head.appendChild(gs);
+  window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+  gtag('js',new Date());gtag('config',GADS.id);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');
+    if(h.indexOf('line.me')>-1){gtag('event','conversion',{send_to:GADS.id+'/'+GADS.line,value:1.0,currency:'THB'});}
+    else if(h.indexOf('tel:')===0){gtag('event','conversion',{send_to:GADS.id+'/'+GADS.call,value:1.0,currency:'THB'});}
+  },true);
+}
+</script>
+<!-- End Google tag -->
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
