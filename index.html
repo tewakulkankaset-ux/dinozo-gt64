@@ -225,6 +225,16 @@ footer img{height:30px;width:auto}
 .sec-head.row{max-width:none;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
 .vgrid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:16px}
 .vcard{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#000;cursor:pointer;padding:0;color:inherit;text-align:left;font:inherit}
+/* latest clips row */
+.newclips-head{display:flex;align-items:center;gap:12px;margin:34px 0 14px}
+.newclips-head h3{font-family:"Kanit";font-weight:700;font-size:1.3rem}
+.newtag{background:var(--red);color:#fff;font-family:"Kanit";font-weight:600;font-size:.8rem;padding:3px 10px;border-radius:999px}
+.newclips{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.newclips .vcard .cap{font-size:.9rem;padding:30px 12px 10px}
+.newclips .vcard .play{bottom:38%}
+.newclips .vcard .play i{width:42px;height:42px}
+@media (max-width:980px){.newclips{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){.newclips{grid-template-columns:1fr 1fr}.newclips .vcard:first-child{grid-column:span 2}}
 .vcard{aspect-ratio:16/9}
 .vcard.main{grid-row:span 2;aspect-ratio:auto}
 .vcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8;transition:opacity .2s,transform .3s}
@@ -512,7 +522,7 @@ document.addEventListener('click',function(e){
         <h2>คลิปรีวิว GT64 และการใช้งานจริง</h2>
         <p>กดเล่นได้ทันที · คลิปจากช่อง YouTube 168 เทวกุล</p>
       </div>
-      <a class="btn btn-ghost" href="videos.html#all">คลิปทั้งหมด DINOZO GT64 (29 คลิป) →</a>
+      <a class="btn btn-ghost" href="videos.html#all">คลิปทั้งหมด DINOZO GT64 (34 คลิป) →</a>
     </div>
     <div class="vgrid">
       <button class="vcard main" data-yt="GIvVT9Rr548">
@@ -540,6 +550,34 @@ document.addEventListener('click',function(e){
         <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
         <span class="cap">ทำไมมืออาชีพเลือกใช้ GT64<small>5:15</small></span>
       </button>    </div>
+    <div class="newclips-head"><span class="newtag">ใหม่</span><h3>คลิปใหม่ล่าสุด DINOZO GT64</h3></div>
+    <div class="newclips">
+      <button class="vcard" data-yt="61hZStgoyME">
+        <img src="img/yt/61hZStgoyME.webp" alt="" loading="lazy">
+        <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
+        <span class="cap">เครื่องแรงเจอจานเอ็นสายโหด! GT64 + SPEED<small>9:44</small></span>
+      </button>
+      <button class="vcard" data-yt="yLqxbWhlcxA">
+        <img src="img/yt/yLqxbWhlcxA.webp" alt="" loading="lazy">
+        <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
+        <span class="cap">ฟังเสียงเครื่อง ดูพละกำลังตอนลงหญ้าจริง<small>Shorts</small></span>
+      </button>
+      <button class="vcard" data-yt="qVzgELnR2vw">
+        <img src="img/yt/qVzgELnR2vw.webp" alt="" loading="lazy">
+        <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
+        <span class="cap">ทำไมเจ้าของสวนถึงเลือก GT64? ครบ 6 ข้อ<small>Shorts</small></span>
+      </button>
+      <button class="vcard" data-yt="fuCF01bSank">
+        <img src="img/yt/fuCF01bSank.webp" alt="" loading="lazy">
+        <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
+        <span class="cap">7 เหตุผล GT64 เครื่องสำหรับงานหนัก<small>Shorts</small></span>
+      </button>
+      <button class="vcard" data-yt="jpdZclCIYSo">
+        <img src="img/yt/jpdZclCIYSo.webp" alt="" loading="lazy">
+        <span class="play"><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i></span>
+        <span class="cap">GT64 ต่างจากเครื่องทั่วไปตรงไหน?<small>Shorts</small></span>
+      </button>
+    </div>
   </div>
 </section>
 
